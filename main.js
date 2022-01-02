@@ -60,11 +60,9 @@ puzzlebox.operate = () => {
             puzzlebox.stage = 2;
         }
     } else if(puzzlebox.stage === 2) {
-        ctx.fillStyle = `#00f`;
-        ctx.fillRect(x + x_two - x_sixteen, y + x_two - x_sixteen, x_eight, x_eight);
         ctx.fillStyle = `#0f0`;
         ctx.fillRect(cursor.x - x_sixteen, cursor.y - x_sixteen, x_eight, x_eight);
-        if(cursor.x === Math.round(x + x_two) && cursor.y === Math.round(y + x_two)) puzzlebox.stage = 0;
+        if(cursor.x === Math.round(x + x_two) && cursor.y === Math.round(y + x_two)) puzzlebox.stage = 3;
     } else if(puzzlebox.stage === 3) {
         ctx.fillStyle = `#00f`;
         ctx.fillRect(x + x_two - x_sixteen, y + x_two - x_sixteen, x_eight, x_eight);

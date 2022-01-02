@@ -7,7 +7,7 @@ cursor = {};
 cursor.x = 0;
 cursor.y = 0;
 
-// ctx.translate(0.5, 0.5);
+ctx.translate(0.5, 0.5);
 
 html_canvas.center = {};
 html_canvas.background = () => {ctx.fillStyle = `#000`; ctx.fillRect(0, 0, html_canvas.width, html_canvas.height)};
